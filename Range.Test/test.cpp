@@ -41,6 +41,12 @@ public:
 		ASSERT_EQ(range2 -> start, 0);
 		ASSERT_EQ(range2 -> limit, 7);
 	}
+
+	TEST_F(RangeTests, canLstretch){
+		range3 -> lstretch();
+		ASSERT_EQ(range3 -> start, 0);
+		ASSERT_EQ(range3 -> limit, 10);
+	}
 	
 
 
