@@ -26,6 +26,7 @@ class Range {
     }
 
     void rstretch(){
+        this -> limit = this -> limit + 1;
     
     }
 
