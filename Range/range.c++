@@ -35,7 +35,7 @@ class Range {
     }
 
     void lstretch(){
-    
+        this -> start = this -> start - 1;
     }
 
 };
