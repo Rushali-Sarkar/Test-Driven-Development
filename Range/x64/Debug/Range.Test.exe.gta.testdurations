@@ -4,5 +4,6 @@
   <TestDurations>
     <TestDuration Test="TestCaseName.TestName" Duration="1" />
     <TestDuration Test="RangeTests.caninitialiseLimits" Duration="1" />
+    <TestDuration Test="RangeTests.canintialiseCustomEnd" Duration="1" />
   </TestDurations>
 </GtaTestDurations>
