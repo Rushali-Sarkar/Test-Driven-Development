@@ -25,4 +25,8 @@ class Range {
         this -> limit = limit < start ? start : limit;
     }
 
+    void rstretch(){
+    
+    }
+
 };

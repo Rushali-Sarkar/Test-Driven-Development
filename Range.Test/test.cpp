@@ -29,7 +29,12 @@ public:
 		ASSERT_EQ(range4 -> start, 2);
 		ASSERT_EQ(range4 -> limit, 5);
 	}
-
+	
+	TEST_F(RangeTests, canrstrtech){
+		range2 -> rstretch();
+		ASSERT_EQ(range2 -> start, 0);
+		ASSERT_EQ(range2 -> limit, 6);
+	}
 	
 
 
