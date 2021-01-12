@@ -7,11 +7,15 @@ class Range {
 
  public: 
 	int start;
-	int end;
+	int limit;
 
 	Range() {
         this -> start = 0;
-        this -> end = 0;
+        this -> limit = 0;
 	}
+
+    Range(int limit) {
+    
+    }
 
 };
