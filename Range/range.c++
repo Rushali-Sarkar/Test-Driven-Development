@@ -20,6 +20,7 @@ class Range {
     }
 
     Range(int start, int limit) {
-
+        this -> start = start;
+        this -> limit = limit;
     }
 };

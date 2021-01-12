@@ -23,7 +23,7 @@ public:
 
 	TEST_F(RangeTests, canintialisecustomStartandLimit) {
 		ASSERT_EQ(range3 -> start, 1);
-		ASSERT_EQ(range3 -> limit, 10)
+		ASSERT_EQ(range3 -> limit, 10);
 	}
 
 
