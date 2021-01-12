@@ -9,6 +9,8 @@ public:
 	Range* range1 = new Range();
 	Range* range2 = new Range(5);
 	Range* range3 = new Range(1, 10);
+	Range* range4 = new Range(5, 2);
+
 };
 
 	TEST_F(RangeTests, caninitialiseLimits) {
@@ -24,6 +26,11 @@ public:
 	TEST_F(RangeTests, canintialisecustomStartandLimit) {
 		ASSERT_EQ(range3 -> start, 1);
 		ASSERT_EQ(range3 -> limit, 10);
+	}
+
+	TEST_F(RangeTests, canInitialiseWhenArg1GreaterthanArg2) {
+		ASSERT_EQ(range4 -> start, 2);
+		ASSERT_EQ(range4 -> limit, 5);
 	}
 
 
