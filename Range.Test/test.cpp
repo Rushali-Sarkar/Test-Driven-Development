@@ -31,21 +31,26 @@ public:
 	}
 	
 	TEST_F(RangeTests, canrstrtech){
-		range2 -> rstretch();
-		ASSERT_EQ(range2 -> start, 0);
+		range2 -> rstretch(2);
+		ASSERT_EQ(range2 -> start, 3);
 		ASSERT_EQ(range2 -> limit, 6);
 	}
 
 	TEST_F(RangeTests, customizeRstretch){
-		range2 -> rstretch(2);
-		ASSERT_EQ(range2 -> start, 0);
-		ASSERT_EQ(range2 -> limit, 7);
+		range4 -> rstretch(2);
+		ASSERT_EQ(range4 -> start, 0);
+		ASSERT_EQ(range4 -> limit, 7);
 	}
 
 	TEST_F(RangeTests, canLstretch){
 		range3 -> lstretch();
 		ASSERT_EQ(range3 -> start, 0);
 		ASSERT_EQ(range3 -> limit, 10);
+	}
+	TEST_F(RangeTests, customLstretch){
+		range3 -> lstretch();
+		ASSERT_EQ(range3 -> start, 0);
+		ASSERT_EQ(range3 -> limit, 5);
 	}
 	
 
