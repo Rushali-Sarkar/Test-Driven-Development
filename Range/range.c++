@@ -19,4 +19,7 @@ class Range {
         this -> limit = limit;
     }
 
+    Range(int start, int limit) {
+
+    }
 };
