@@ -30,16 +30,16 @@ public:
 		ASSERT_EQ(range4 -> limit, 5);
 	}
 	
-	TEST_F(RangeTests, canrstrtech){
-		range2 -> rstretch(2);
-		ASSERT_EQ(range2 -> start, 3);
+	TEST_F(RangeTests, canrstretch){
+		range2 -> rstretch();
+		ASSERT_EQ(range2 -> start, 0);
 		ASSERT_EQ(range2 -> limit, 6);
 	}
 
 	TEST_F(RangeTests, customizeRstretch){
-		range4 -> rstretch(2);
-		ASSERT_EQ(range4 -> start, 0);
-		ASSERT_EQ(range4 -> limit, 7);
+		range2 -> rstretch(2);
+		ASSERT_EQ(range2 -> start, 0);
+		ASSERT_EQ(range2 -> limit, 7);
 	}
 
 	TEST_F(RangeTests, canLstretch){
@@ -48,9 +48,9 @@ public:
 		ASSERT_EQ(range3 -> limit, 10);
 	}
 	TEST_F(RangeTests, customLstretch){
-		range3 -> lstretch();
-		ASSERT_EQ(range3 -> start, 0);
-		ASSERT_EQ(range3 -> limit, 5);
+		range4 -> lstretch(2);
+		ASSERT_EQ(range4 -> start, 0);
+		ASSERT_EQ(range4 -> limit, 5);
 	}
 	
 

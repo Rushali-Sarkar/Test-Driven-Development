@@ -38,4 +38,8 @@ class Range {
         this -> start = this -> start - 1;
     }
 
+    void lstretch(int jump){
+    	start -= jump;
+    }
+
 };
