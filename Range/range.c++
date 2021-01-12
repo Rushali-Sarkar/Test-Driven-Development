@@ -10,6 +10,8 @@ class Range {
 	int end;
 
 	Range() {
+        this -> start = 0;
+        this -> end = 0;
 	}
 
 };
