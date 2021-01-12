@@ -1,7 +1,17 @@
 #include "pch.h"
 #include "../Range/range.c++"
 
-TEST(TestCaseName, TestName) {
-  EXPECT_EQ(1, 1);
-  EXPECT_TRUE(true);
-}
+
+
+class RangeTests : public::testing::Test {
+
+public:
+	Range range1;
+};
+
+	TEST_F(RangeTests, caninitialiseLimits) {
+		ASSERT_EQ(range1.start, 0);
+		ASSERT_EQ(range1.end, 0);
+  }
+
+
