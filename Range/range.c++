@@ -30,4 +30,6 @@ class Range {
     
     }
 
+    void rstretch(int jump){}
+
 };
