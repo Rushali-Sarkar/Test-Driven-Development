@@ -71,5 +71,9 @@ class Range {
         if (this -> start > this -> limit) this -> reset();
     }
 
+    void shift(int n) {
+        
+    }
+
 
 };
