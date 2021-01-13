@@ -85,5 +85,13 @@ TEST_F(RangeTests, Squeeze)
 }
 
 
+TEST_F(RangeTests, CustomSqueeze)
+{
+	range3->squeeze(2);
+	ASSERT_EQ(range3->start, 3);
+	ASSERT_EQ(range3->limit, 8);
+}
+
+
 
 
