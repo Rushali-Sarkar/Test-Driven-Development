@@ -89,7 +89,7 @@ class Range {
 
     string toString()
     {
-        
+        return "[" + to_string(this -> start) + ", " + to_string(this -> limit) + ")";
     }
 
 
