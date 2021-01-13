@@ -115,8 +115,13 @@ TEST_F(RangeTests, Shift)
 }
 
 TEST_F(RangeTests, length)
-{
+{   
 	ASSERT_EQ(range5->length(), 1);
+}
+
+TEST_F(RangeTests, toString)
+{
+	ASSERT_EQ(range5-> toString(), "[3, 4)");
 }
 
 
