@@ -68,7 +68,7 @@ class Range {
         this -> start += margin;
         this -> limit -= margin;
 
-        
+        if (this -> start > this -> limit) this -> reset();
     }
 
 
