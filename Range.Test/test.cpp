@@ -113,3 +113,10 @@ TEST_F(RangeTests, Shift)
 	ASSERT_EQ(range5->start, 4);
 	ASSERT_EQ(range5->limit, 5);
 }
+
+TEST_F(RangeTests, length)
+{
+	ASSERT_EQ(range5->length(), 1);
+}
+
+

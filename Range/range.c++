@@ -76,5 +76,15 @@ class Range {
         this -> limit += n;
     }
 
+     void shift() {
+        this -> start ++;
+        this -> limit ++;
+    }
+
+    int length() {
+        
+    }
+
+
 
 };
