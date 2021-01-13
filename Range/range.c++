@@ -43,13 +43,17 @@ class Range {
     }
 
     void stretch() {
-        this->start--;
-        this->limit++;
+        this -> start--;
+        this -> limit++;
         
     }
-    void stretch(int margin)
-    {
-        
+    void stretch(int margin) {
+        this -> start -= margin;
+        this -> limit += margin;
+    }
+
+    void squeeze() {
+
     }
 
 };
