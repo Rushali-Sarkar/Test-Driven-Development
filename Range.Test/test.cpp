@@ -8,6 +8,7 @@ public:
 	Range *range2 = new Range(5);
 	Range *range3 = new Range(1, 10);
 	Range *range4 = new Range(5, 2);
+	Range *range5 = new Range(3, 4);
 };
 
 TEST_F(RangeTests, caninitialiseLimits)
@@ -79,3 +80,9 @@ TEST_F(RangeTests, Squeeze)
 	ASSERT_EQ(range4->limit, 4);
 }
 
+TEST_F(RangeTests, invalidSqueeze)
+{
+	range5->squeeze();
+	ASSERT_EQ(range5->start, 0);
+	ASSERT_EQ(range5->limit, 0);
+}
