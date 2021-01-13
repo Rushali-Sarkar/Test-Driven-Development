@@ -82,6 +82,13 @@ class Range {
     }
 
     int length() {
+
+        return this -> limit - this -> start;
+        
+    }
+
+    string toString()
+    {
         
     }
 
