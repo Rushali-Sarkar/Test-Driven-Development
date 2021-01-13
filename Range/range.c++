@@ -53,6 +53,10 @@ class Range {
     }
 
     void squeeze() {
+        this->start++;
+        this->limit--;
+
+        
 
     }
 
