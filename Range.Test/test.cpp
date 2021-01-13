@@ -99,9 +99,17 @@ TEST_F(RangeTests, invalidCustomSqueeze)
 	ASSERT_EQ(range5->limit, 0);
 }
 
-TEST_F(RangeTests,shift)
+TEST_F(RangeTests,customShift)
 {
 	range5->shift(2);
 	ASSERT_EQ(range5->start, 5);
 	ASSERT_EQ(range5->limit, 6);
+
+}
+
+TEST_F(RangeTests, Shift)
+{
+	range5->shift();
+	ASSERT_EQ(range5->start, 4);
+	ASSERT_EQ(range5->limit, 5);
 }
