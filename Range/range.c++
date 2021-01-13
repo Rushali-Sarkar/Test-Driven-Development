@@ -72,7 +72,8 @@ class Range {
     }
 
     void shift(int n) {
-        
+        this -> start += n;
+        this -> limit += n;
     }
 
 
