@@ -25,6 +25,11 @@ class Range {
         this -> limit = limit < start ? start : limit;
     }
 
+    void reset() {
+        this -> start = 0;
+        this ->limit = 0;
+    }
+
     void rstretch(){
         this -> limit = this -> limit + 1;
     
@@ -56,8 +61,7 @@ class Range {
         this->start++;
         this->limit--;
 
-        
-
+        if (this -> start > this -> limit) this -> reset();
     }
 
 };
