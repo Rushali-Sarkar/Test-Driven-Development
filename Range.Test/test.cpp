@@ -1,8 +1,7 @@
 #include "pch.h"
 #include "../Range/range.c++"
 
-class RangeTests : public ::testing::Test
-{
+class RangeTests : public ::testing::Test {
 
 public:
 	Range *range1 = new Range();
@@ -66,9 +65,17 @@ TEST_F(RangeTests, twoSidedStretch)
 	ASSERT_EQ(range3->limit, 11);
 }
 
-TEST_F(RangeTests, customTwoSidedSqueeze)
+TEST_F(RangeTests, customTwoSidedStretch)
 {
 	range4->stretch(2);
 	ASSERT_EQ(range4->start, 0);
 	ASSERT_EQ(range4->limit, 7);
 }
+
+TEST_F(RangeTests, Squeeze)
+{
+	range4->squeeze();
+	ASSERT_EQ(range4->start, 3);
+	ASSERT_EQ(range4->limit, 4);
+}
+
