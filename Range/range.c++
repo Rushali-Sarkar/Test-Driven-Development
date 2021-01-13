@@ -65,6 +65,10 @@ class Range {
     }
 
     void squeeze(int margin) {
+        this -> start += margin;
+        this -> limit -= margin;
+
+        
     }
 
 
