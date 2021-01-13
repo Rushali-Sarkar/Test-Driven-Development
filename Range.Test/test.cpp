@@ -47,10 +47,17 @@ public:
 		ASSERT_EQ(range3 -> start, 0);
 		ASSERT_EQ(range3 -> limit, 10);
 	}
+
 	TEST_F(RangeTests, customLstretch){
 		range4 -> lstretch(2);
 		ASSERT_EQ(range4 -> start, 0);
 		ASSERT_EQ(range4 -> limit, 5);
+	}
+
+	TEST_F(RangeTests, twoSidedStretch) {
+		range3 -> stretch();
+		ASSERT_EQ(range3 -> start, 0);
+		ASSERT_EQ(range3 -> limit, 11);
 	}
 	
 

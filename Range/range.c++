@@ -42,4 +42,8 @@ class Range {
     	start -= jump;
     }
 
+    void stretch() {
+        
+    }
+
 };
