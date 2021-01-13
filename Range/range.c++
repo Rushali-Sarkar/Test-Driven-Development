@@ -64,4 +64,8 @@ class Range {
         if (this -> start > this -> limit) this -> reset();
     }
 
+    void squeeze(int margin) {
+    }
+
+
 };

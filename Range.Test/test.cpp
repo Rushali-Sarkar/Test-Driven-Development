@@ -78,11 +78,12 @@ TEST_F(RangeTests, Squeeze)
 	range4->squeeze();
 	ASSERT_EQ(range4->start, 3);
 	ASSERT_EQ(range4->limit, 4);
-}
 
-TEST_F(RangeTests, invalidSqueeze)
-{
 	range5->squeeze();
 	ASSERT_EQ(range5->start, 0);
 	ASSERT_EQ(range5->limit, 0);
 }
+
+
+
+
